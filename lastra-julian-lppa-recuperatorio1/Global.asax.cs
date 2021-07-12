@@ -8,7 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 
-namespace lastra_julian_lppa_recuperatorio1
+namespace Entities
 {
     public class Global : HttpApplication
     {

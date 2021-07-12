@@ -6,14 +6,9 @@ using System.Web.Mvc;
 
 namespace Entities.Controllers
 {
-    public class HomeController : Controller
+    public class ClassEController : Controller
     {
-        // GET: Home
-        public ActionResult About()
-        {
-            return View();
-        }
-
+        // GET: Class
         public ActionResult Index()
         {
             return View();

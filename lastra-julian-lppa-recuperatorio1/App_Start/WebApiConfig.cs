@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace lastra_julian_lppa_recuperatorio1
+namespace Entities
 {
     public static class WebApiConfig
     {

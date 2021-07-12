@@ -114,10 +114,16 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\ClassEController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Domain\Data\ClassEDbContext.cs" />
+    <Compile Include="Domain\Data\BaseDataService.cs" />
+    <Compile Include="Domain\Data\IDataService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ClassE.cs" />
+    <Compile Include="Models\IdentityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +132,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -136,8 +143,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Domain\Business\" />
-    <Folder Include="Domain\Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="Views\Class\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

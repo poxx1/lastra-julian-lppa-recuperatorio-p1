@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace lastra_julian_lppa_recuperatorio1
+namespace Entities
 {
     public class RouteConfig
     {
