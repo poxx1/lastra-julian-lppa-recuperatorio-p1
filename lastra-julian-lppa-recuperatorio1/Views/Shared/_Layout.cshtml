@@ -3,14 +3,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="~/Content/site.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="contenedor">
+    <div id="contenedor" >
         <div id="cabecera">
-            <div id="logo">
-                <h1></h1>
+            <div id="afiliados">
+                <img src="~/Content/afiliados.jpg"><img />
             </div>
+
             <div id="buscador">
                 <form action="#" method="post">
                     Buscar &nbsp;
@@ -21,22 +22,21 @@
             </div>
         </div>
         <div id="menu">
-            <ul id="menu_principal">
+            <ul id="menu_principal" class="borderTop">
                 <li> <a href="/">Home</a> </li>
-                <li> <a href="/Home/About">About</a> </li>
                 <li>
                     <a href="@Url.Action("Index", "Afiliados")">Afiliados</a>
                 </li>
             </ul>
         </div>
-        <div id="contenido">
+        <div id="contenido" class="borderTop">
             <div id="principal">
                 @RenderBody()
             </div>
-            <div id="secundario">
-                <h2> Opciones secundarias</h2>
-            </div>
+            <br></br>
+            <br></br>
         </div>
+   
         <div id="pie">
             <p>Lastra Julian LPPA - 2021</p>
         </div>

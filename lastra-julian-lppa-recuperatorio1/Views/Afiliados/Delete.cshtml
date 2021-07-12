@@ -4,11 +4,11 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Eliminar registro</h2>
+<h1>Afiliados de la obra social</h1>
 
 <h3>Va a eliminar un registro, valide antes de eliminar!!</h3>
 <div>
-    <h4>ClassE</h4>
+    <h4>Eiliminar afiliado</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -53,7 +53,8 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">

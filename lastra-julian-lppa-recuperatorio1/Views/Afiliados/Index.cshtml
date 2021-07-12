@@ -4,11 +4,13 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Afiliados a la obra social</h2>
+<h1>Afiliados de la obra social</h1>
 
-<p>
-    @Html.ActionLink("Agregar nuevo afiliado", "Create")
-</p>
+<div id="secundario" >
+    <p class="linkRemove">
+        @Html.ActionLink("Nuevo Afiliado", "Create")
+    </p>
+</div>
 <table class="table">
     <tr>
         <th>
@@ -26,25 +28,26 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.NombreCompleto)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Email)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Telefono)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Cuit)
-        </td>
-        <td>
-            @Html.ActionLink("Editar", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Eliminar", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NombreCompleto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cuit)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
 
 </table>

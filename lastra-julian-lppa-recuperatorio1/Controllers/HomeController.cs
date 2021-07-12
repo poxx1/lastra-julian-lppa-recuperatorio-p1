@@ -8,10 +8,6 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult About()
-        {
-            return View();
-        }
 
         public ActionResult Index()
         {

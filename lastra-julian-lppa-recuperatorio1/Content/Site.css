@@ -13,8 +13,19 @@ h1, h2, h3, p, form {
     clear: both;
 }
 
+.borderTop {
+    border-top: blue;
+    border-style: solid;
+    border-left: white;
+    border-bottom: white;
+    border-right: white;
+}
+
+
 img {
     border: none;
+    width:100px;
+    
 }
 
 .articulo > p {
@@ -22,8 +33,12 @@ img {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.8em;
+    font-family: Calibri, Tahoma;
+    font-size: 1em;
+}
+
+.linkRemove {
+    text-decoration: none !important;
 }
 
 #contenedor {
@@ -33,7 +48,7 @@ body {
 }
 
 #cabecera, #menu, #contenido, #contenido #principal, #contenido #secundario, #pie {
-    border: 2px solid #777;
+    border: 2px solid #fff;
 }
 
 #cabecera {
@@ -56,14 +71,19 @@ body {
 
 #contenido #secundario {
     float: right;
-    width: 20%;
+    text-align: center;
+    width: 30%;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #pie {
     clear: both;
 }
 
-#cabecera #logo {
+#cabecera #afiliados {
     float: left;
 }
 
@@ -79,6 +99,7 @@ body {
 
 #contenido #principal .articulo img {
     width: 100px;
+    height: 30px;
     float: left;
 }
 
@@ -100,9 +121,9 @@ body {
 }
 
 #cabecera h1 {
-    background: url(logo.jpg) no-repeat 0px 0px;
-    width: 250px;
-    height: 33px;
+    background: url(afiliados.jpg) no-repeat 0px 0px;
+    width: 150px;
+    height: 20px;
 }
 
 #cabecera h1 span {
@@ -150,7 +171,7 @@ body {
 }
 
 .table td, .table th {
-    border: 1px solid #ddd;
+    border: 2px solid #C5C5C5;
     padding: 8px;
 }
 
@@ -166,6 +187,6 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #C11212;
-    color: #fafafa;
+    background-color: #fff;
+    color: #000000;
 }
