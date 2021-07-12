@@ -4,13 +4,13 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Domain.Data
 {
-    public class ClassEDbContext : DbContext
+    public class AfiliadosDbContext : DbContext
     {
-        public ClassEDbContext()
+        public AfiliadosDbContext()
         : base("DefaultConnection") 
         {
         }
-        public DbSet<ClassE> ClassEs { get; set; }
+        public DbSet<Afiliados> Afiliados{ get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

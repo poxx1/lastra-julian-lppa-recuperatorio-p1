@@ -10,11 +10,11 @@ namespace Domain.Data
 {
     public class BaseDataService<T> : IDataService<T> where T : IdentityBase, new()
     {
-        protected ClassEDbContext Db;
+        protected AfiliadosDbContext Db;
 
         public BaseDataService()
         {
-            this.Db = new ClassEDbContext();
+            this.Db = new AfiliadosDbContext();
         }
 
         public T Create(T entity)

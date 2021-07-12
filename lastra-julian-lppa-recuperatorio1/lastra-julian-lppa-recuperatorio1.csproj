@@ -113,15 +113,15 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ClassEController.cs" />
+    <Compile Include="Controllers\AfiliadosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Domain\Data\ClassEDbContext.cs" />
+    <Compile Include="Domain\Data\AfiliadosDbContext.cs" />
     <Compile Include="Domain\Data\BaseDataService.cs" />
     <Compile Include="Domain\Data\IDataService.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ClassE.cs" />
+    <Compile Include="Models\Afiliados.cs" />
     <Compile Include="Models\IdentityBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -132,10 +132,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\ClassE\Index.cshtml" />
-    <Content Include="Views\ClassE\Create.cshtml" />
-    <Content Include="Views\ClassE\Edit.cshtml" />
-    <Content Include="Views\ClassE\Delete.cshtml" />
+    <Content Include="Views\Afiliados\Index.cshtml" />
+    <Content Include="Views\Afiliados\Create.cshtml" />
+    <Content Include="Views\Afiliados\Edit.cshtml" />
+    <Content Include="Views\Afiliados\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

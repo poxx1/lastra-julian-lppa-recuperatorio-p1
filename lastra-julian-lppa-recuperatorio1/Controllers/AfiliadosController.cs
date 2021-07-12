@@ -8,13 +8,13 @@ using System.Web.Mvc;
 
 namespace lastra_julian_lppa_recuperatorio1.Controllers
 {
-    public class ClassEController : Controller
+    public class AfiliadosController : Controller
     {
-        BaseDataService<ClassE> db;
+        BaseDataService<Afiliados> db;
 
-        public ClassEController()
+        public AfiliadosController()
         {
-            db = new BaseDataService<ClassE>();
+            db = new BaseDataService<Afiliados>();
         }
 
         [HttpGet]
@@ -45,7 +45,7 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(ClassE model)
+        public ActionResult Create(Afiliados model)
         {
             if (ModelState.IsValid)
             {
@@ -57,7 +57,7 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Edit(ClassE model)
+        public ActionResult Edit(Afiliados model)
         {
             if (ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Delete(ClassE model)
+        public ActionResult Delete(Afiliados model)
         {
             if (ModelState.IsValid)
             {

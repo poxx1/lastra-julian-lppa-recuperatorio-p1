@@ -1,13 +1,13 @@
-﻿@model IEnumerable<Entities.Models.ClassE>
+﻿@model IEnumerable<Entities.Models.Afiliados>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>ClassE</h2>
+<h2>Afiliados a la obra social</h2>
 
 <p>
-    @Html.ActionLink("Agregar ClassE", "Create")
+    @Html.ActionLink("Agregar nuevo afiliado", "Create")
 </p>
 <table class="table">
     <tr>
@@ -29,7 +29,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.FullName)
+            @Html.DisplayFor(modelItem => item.NombreCompleto)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Email)

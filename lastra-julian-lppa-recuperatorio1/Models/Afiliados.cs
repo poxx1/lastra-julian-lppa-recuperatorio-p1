@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models
 {
-    public class ClassE : IdentityBase
+    public class Afiliados : IdentityBase
     {
         [Required(ErrorMessage = "Campo requerido")]
         [MaxLength(25)]
@@ -27,7 +27,7 @@ namespace Entities.Models
         public long Cuit { get; set; }
 
         [NotMapped]
-        public string FullName
+        public string NombreCompleto
         {
             get
             {
