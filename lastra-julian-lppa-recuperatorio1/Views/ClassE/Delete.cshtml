@@ -1,0 +1,64 @@
+﻿@model Entities.Models.ClassE
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Eliminar registro</h2>
+
+<h3>Va a eliminar un registro, valide antes de eliminar!!</h3>
+<div>
+    <h4>ClassE</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cuit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cuit)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar registro" class="btn btn-default" /> |
+            @Html.ActionLink("Volver a la vista de la tabla", "Index")
+        </div>
+    }
+</div>

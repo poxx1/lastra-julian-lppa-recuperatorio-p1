@@ -24,9 +24,24 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
             return View(lista);
         }
 
+        [HttpGet]
         public ActionResult Create()
         {
             return View();
+        }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = db.GetById(id);
+            return View(model);
+        }
+
+        [HttpGet]
+        public ActionResult Delete(int id)
+        {
+            var model = db.GetById(id);
+            return View(model);
         }
 
         [HttpPost]
@@ -38,6 +53,30 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
                 return RedirectToAction("Index");
             }
                 
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(ClassE model)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Update(model);
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Delete(ClassE model)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Delete(model.Id);
+                return RedirectToAction("Index");
+            }
+
             return View(model);
         }
     }
