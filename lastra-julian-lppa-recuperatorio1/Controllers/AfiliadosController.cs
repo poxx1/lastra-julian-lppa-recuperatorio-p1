@@ -71,12 +71,9 @@ namespace lastra_julian_lppa_recuperatorio1.Controllers
         [HttpPost]
         public ActionResult Delete(Afiliados model)
         {
-            if (ModelState.IsValid)
-            {
-                db.Delete(model.Id);
-                return RedirectToAction("Index");
-            }
-
+            db.Delete(model.Id);
+            return RedirectToAction("Index");
+           
             return View(model);
         }
     }
