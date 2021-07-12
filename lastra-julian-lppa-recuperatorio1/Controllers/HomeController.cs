@@ -4,11 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Entities.Controllers
+namespace lastra_julian_lppa_recuperatorio1.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult About()
         {
             return View();
